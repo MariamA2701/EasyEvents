@@ -1,2 +1,2 @@
 # EasyEvents
-User Events Bookings Application
+User Events Bookins Application
