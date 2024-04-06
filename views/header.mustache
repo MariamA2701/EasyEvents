@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #efebe9; 
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #a1887f; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  border-bottom: 5px solid #5d4037; 
+}
+
+.header h1 {
+  font-size: 60px; 
+  color: #fff; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  margin: 0; 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #795548; 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #d7ccc8;
+  color: #3e2723; 
+}
+
+.curnav {
+  background-color: #6d4c41; 
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #d7ccc8;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #bcaaa4;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #a1887f; 
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #efebe9; 
+}
+
+th {
+  background-color: #795548; 
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<title>EasyEvents Application</title>
+</head>
+<body>
+
+<div class="header">
+  <h1>EasyEvents</h1>
+</div>

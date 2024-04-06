@@ -1,0 +1,38 @@
+{{>header}}
+
+{{>navigation}}
+
+<br />
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>This page is for booking the event</h2>
+      <p>Enter the location you chose and the details following!</p>
+      <p style="color:red;">{{ login_error }}</p>
+      <form action="/bookings/attemptbookings" method="post">
+        <input type="hidden" name="username" value="{{username}}">
+        <label for="location">Location:</label>
+        <select name="location" id="location">
+        </select> <br /><br />
+        <label for="attendees">Attendees:</label>
+        <input type="text" name="attendees"> <br /><br />
+        <label for="date">Date:</label>
+        <input type="date" name="date"> <br /><br />
+        <input type="submit" value="Booking">
+      </form> <br />
+    </div>
+  </div>
+</div>
+
+{{>footer}}
+
+<script src="publicHalls.js"></script>
+
+<script>
+    const hallDropdown = document.getElementById('location');
+
+    publicHalls.features.forEach(hall => {
+        const option = new Option(hall.BUSINESS_NAME, hall.BUSINESS_NAME);
+        hallDropdown.add(option);
+    });
+</script>

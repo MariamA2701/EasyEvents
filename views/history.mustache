@@ -1,0 +1,37 @@
+{{>header}}
+
+{{>navigation}}
+
+<br/>
+<br/>
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Location</th>
+      <th>Attendees</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#events}}
+    <tr>
+      <td>{{event_date}}</td>
+      <td>{{location}}</td>
+      <td>{{attendees}}</td>
+      <td>
+        <form action="/history/deleteEvent/{{event_id}}" method="POST">
+        <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+    {{/events}}
+  </tbody>
+</table>
+
+
+{{>footer}}
+
+
+
+
